@@ -28,6 +28,7 @@ header {
 }
 
 header .logo {
+    padding-left: 5%;
     position: relative;
     color: #fff;
     text-decoration: none;
