@@ -11,6 +11,16 @@ body {
     background: #050e2d;
 }
 
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1aeeef;
+    border-radius: 6px;
+}
+
 /* CABEÇALHO */
 
 header {
@@ -25,6 +35,11 @@ header {
     background-color: #1b2141;
     transition: 0.5s;
     z-index: 1000;
+}
+
+header .sticky {
+    background: #1b2141;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -171,6 +186,7 @@ header .action .searchBx input {
     text-align: justify;
     color: #dbd9d9;
 }
+
 .about .contentBx a {
     display: inline-block;
     padding: 10px 20px;
@@ -186,6 +202,44 @@ header .action .searchBx input {
 .about .contentBx a:hover {
     background: #1aeeef;
     border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+}
+
+/*Ganes*/
+
+.games{
+    padding: 0px 100px;
+    width:  100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+.games h2{
+    color: #fff;
+    margin: 10px 0;
+}
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.games ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+}
+.games ul li.active{
+    background: #1aeeef;
     color: #050e2d;
     box-shadow: 0 0 10px #1aeeef;
 }
