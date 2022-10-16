@@ -52,12 +52,14 @@ header ul li a {
     padding: 10px 20px;
     border-radius: 5px;
 }
-header ul li a:hover{
+
+header ul li a:hover {
     background: #1aeeef;
     color: #050e2d;
     box-shadow: 0 0 10px #1aeeef;
 }
-header .action .searchBx{
+
+header .action .searchBx {
     padding: 5px;
     margin: 5px;
     display: flex;
@@ -66,12 +68,14 @@ header .action .searchBx{
     background: #fff;
     border-radius: 5px;
 }
-header .action .searchBx i{
+
+header .action .searchBx i {
     font-size: 1.4em;
     margin: 5px;
     color: #222;
 }
-header .action .searchBx input{
+
+header .action .searchBx input {
     outline: none;
     border: none;
     font-size: 1em;
