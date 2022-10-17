@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #050e2d;
+    background: #262626;
 }
 
 /*Scroll Bar*/
@@ -17,7 +17,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #1aeeef;
+    background: #F2CB05;
     border-radius: 6px;
 }
 
@@ -32,20 +32,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1b2141;
+    background-color: #F2CB05;
     transition: 0.5s;
     z-index: 1000;
-}
-
-header .sticky {
-    background: #1b2141;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
     padding-left: 5%;
     position: relative;
-    color: #fff;
+    color: #0D0D0D;
     text-decoration: none;
     font-size: 2em;
     font-weight: 700;
@@ -63,16 +58,16 @@ header ul li {
 }
 
 header ul li a {
-    color: #fff;
+    color: #0D0D0D;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
 }
 
 header ul li a:hover {
-    background: #1aeeef;
-    color: #050e2d;
-    box-shadow: 0 0 10px #1aeeef;
+    background: #F2CB05;
+    color: #0D0D0D;
+    box-shadow: 0 0 12px #988005;
 }
 
 header .action .searchBx {
@@ -141,7 +136,7 @@ header .action .searchBx input {
     display: inline-block;
     padding: 10px 20px;
     margin: 20px 0;
-    border: 1px solid #1aeeef;
+    border: 1px solid #F2CB05;
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
@@ -150,10 +145,10 @@ header .action .searchBx input {
 }
 
 .banner .bg .content a:hover {
-    background: #1aeeef;
+    background: #F2CB05;
     border: none;
     color: #050e2d;
-    box-shadow: 0 0 10px #1aeeef;
+    box-shadow: 0 0 10px #F2CB05;
 }
 
 .banner .bg img {
@@ -191,7 +186,7 @@ header .action .searchBx input {
     display: inline-block;
     padding: 10px 20px;
     margin: 20px 0;
-    border: 1px solid #1aeeef;
+    border: 1px solid #F2CB05;
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
@@ -200,17 +195,17 @@ header .action .searchBx input {
 }
 
 .about .contentBx a:hover {
-    background: #1aeeef;
+    background: #F2CB05;
     border: none;
     color: #050e2d;
-    box-shadow: 0 0 10px #1aeeef;
+    box-shadow: 0 0 10px #F2CB05;
 }
 
 /*Ganes*/
 
-.games{
+.games {
     padding: 0px 100px;
-    width:  100%;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -218,18 +213,21 @@ header .action .searchBx input {
     flex-direction: column;
     margin: 40px auto;
 }
-.games h2{
+
+.games h2 {
     color: #fff;
     margin: 10px 0;
 }
-.games ul{
+
+.games ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
-.games ul li{
+
+.games ul li {
     list-style: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -238,8 +236,108 @@ header .action .searchBx input {
     cursor: pointer;
     color: #fff;
 }
-.games ul li.active{
-    background: #1aeeef;
+
+.games ul li.active {
+    background: #F2CB05;
     color: #050e2d;
-    box-shadow: 0 0 10px #1aeeef;
+    box-shadow: 0 0 10px #F2CB05;
+}
+
+.games .cardBx {
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.games .cardBx .card {
+    width: 280px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #0D0D0D;
+    overflow: hidden;
+}
+
+.games .cardBx .card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.games .cardBx .card .content {
+    padding: 10px;
+}
+
+.games .cardBx .card .content h4 {
+    color: #fff;
+    margin: 15px 0;
+}
+
+.games .cardBx .card .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #F2F2F2;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.games .cardBx .card .progress-line span {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #F2CB05;
+    box-shadow: 0 0 10px #F2CB05;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.games .cardBx .card .info {
+    border-top: 2px solid #0D0D0D;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.games .cardBx .card .info p {
+    font-size: 1em;
+    color: #dbd9d9;
+}
+
+.games .cardBx .card .info p span {
+    color: #F2CB05;
+}
+
+.games .cardBx .card .info a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #F2CB05;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.games .cardBx .card .info a:hover {
+    background: #F2CB05;
+    border: none;
+    color: #262626;
+    box-shadow: 0 0 10px #F2CB05;
 }
